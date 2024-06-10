@@ -9,10 +9,13 @@ const home = () => {
       <h1>Home</h1>
       <ul>
         <Link href={"/rotas/about"}>
-          <li>About</li>
+          <li style={{ backgroundColor: "red", color: "white" }}>About</li>
         </Link>
         <Link href={"/rotas/contacts"}>
-          <li>Contact</li>
+          <li style={{ backgroundColor: "blue", color: "white" }}>Contact</li>
+        </Link>
+        <Link href={"/rotas/id/teste"}>
+          <li style={{ backgroundColor: "gray", color: "white" }}>Teste</li>
         </Link>
       </ul>
     </div>
