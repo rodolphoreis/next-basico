@@ -1,7 +1,9 @@
 export default (req, res) => {
   try {
     if (req.method === "GET") {
+      const id = req.query.id;
       res.status(200).json({
+        id,
         enunciado: "Qual é a sua cor preferida?",
         resposta: ["Branco", "Vermelho", "Azul", "Preto", "Amarelo"],
       });
