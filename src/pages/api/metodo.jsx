@@ -1,5 +1,11 @@
 export default (req, res) => {
-  res.status(200).json({
-    metodo: req.method,
-  });
+  if (req.method === "GET") {
+    res.status(200).json({
+      nome: "Pedro",
+    });
+  } else {
+    res.status(200).json({
+      nome: "Maria",
+    });
+  }
 };
