@@ -1,3 +1,10 @@
 export default function (req, res) {
-  return res.status(200).json({ name: "Reis" });
+  res
+    .status(200)
+    .json([
+      { name: "Rodolpho" },
+      { name: "Bruno" },
+      { name: "Fernanda" },
+      { name: "Ricardo" },
+    ]);
 }
