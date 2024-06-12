@@ -14,6 +14,7 @@ const questao = () => {
   return (
     <div>
       <h2>questao</h2>
+      <span>{questao?.enunciado}</span>
     </div>
   );
 };
