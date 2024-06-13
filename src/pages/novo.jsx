@@ -22,6 +22,7 @@ const Novo = () => {
     if (user) {
       return (
         <ul style={{ listStyle: "none" }}>
+          <li>Id: {user.id}</li>
           <li>Nome: {user.nome}</li>
           <li>Idade: {user.idade}</li>
           <li>Morada: {user.morada}</li>
