@@ -4,8 +4,15 @@ export default function form() {
   const [nome, setNome] = useState("");
   const [idade, setIdade] = useState("");
 
+  const salvarUsuario = () => {
+    fetch("/api/form", {
+      method: "POST",
+      body: JSON.stringify({ nome, idade }),
+    });
+  };
+
   return (
-    <div>
+    <form>
       <h1>Form</h1>
       <input
         type="text"
@@ -19,7 +26,7 @@ export default function form() {
         name="idade"
         onChange={(e) => setIdade(e.target.value)}
       />
-      <button type="submit">Enviar</button>
-    </div>
+      <button onClick={salvarUsuario}>Enviar</button>
+    </form>
   );
 }
