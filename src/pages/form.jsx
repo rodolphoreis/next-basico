@@ -5,9 +5,12 @@ export default function form() {
   const [idade, setIdade] = useState("");
   const [usuarios, setUsuarios] = useState([]);
 
-  const salvarUsuario = () => {
-    fetch("/api/form", {
+  const salvarUsuario = async () => {
+    await fetch("/api/form", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ nome, idade }),
     });
   };
