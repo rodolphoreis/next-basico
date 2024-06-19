@@ -28,6 +28,17 @@ export default function form() {
     carregarUsuarios();
   }, []);
 
+  const renderizarUsuarios = () => {
+    return (
+      usuarios &&
+      usuarios.map((usuario, i) => {
+        return (
+          <li key={i}>
+            {usuario.nome} tem {usuario.idade} anos.
+          </li>
+        );
+      })
+    );
   };
 
   return (
