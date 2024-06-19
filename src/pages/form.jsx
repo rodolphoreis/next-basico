@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function form() {
+export default function Form() {
   const [nome, setNome] = useState("");
   const [idade, setIdade] = useState("");
   const [usuarios, setUsuarios] = useState([]);
@@ -13,7 +13,6 @@ export default function form() {
       },
       body: JSON.stringify({ nome, idade }),
     });
-
 
     carregarUsuarios();
   };
