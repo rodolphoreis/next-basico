@@ -24,6 +24,10 @@ export default function form() {
     setUsuarios(data);
   };
 
+  useEffect(() => {
+    carregarUsuarios();
+  }, []);
+
   };
 
   return (
