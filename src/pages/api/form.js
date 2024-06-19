@@ -7,3 +7,10 @@ export default function form(req, res) {
     res.status(405).send();
   }
 }
+
+function post(req, res) {
+  const usuario = JSON.parse(req.body);
+  usuarios.push(usuario);
+  res.status(200).send();
+}
+
