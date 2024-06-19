@@ -60,6 +60,7 @@ export default function form() {
         Enviar
       </button>
 
+      <ul>{renderizarUsuarios()}</ul>
     </form>
   );
 }
