@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function form() {
   const [nome, setNome] = useState("");
   const [idade, setIdade] = useState("");
+  const [usuarios, setUsuarios] = useState([]);
 
   const salvarUsuario = () => {
     fetch("/api/form", {
