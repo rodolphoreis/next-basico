@@ -14,3 +14,6 @@ function post(req, res) {
   res.status(200).send();
 }
 
+function get(req, res) {
+  res.status(200).json(usuarios);
+}
