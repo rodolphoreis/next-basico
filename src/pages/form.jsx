@@ -18,6 +18,12 @@ export default function form() {
     carregarUsuarios();
   };
 
+  const carregarUsuarios = async () => {
+    const res = await fetch("/api/form");
+    const data = await res.json();
+    setUsuarios(data);
+  };
+
   };
 
   return (
