@@ -56,7 +56,10 @@ export default function form() {
         name="idade"
         onChange={(e) => setIdade(e.target.value)}
       />
-      <button onClick={salvarUsuario}>Enviar</button>
+      <button type="button" onClick={salvarUsuario}>
+        Enviar
+      </button>
+
     </form>
   );
 }
