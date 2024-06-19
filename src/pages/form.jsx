@@ -13,6 +13,11 @@ export default function form() {
       },
       body: JSON.stringify({ nome, idade }),
     });
+
+
+    carregarUsuarios();
+  };
+
   };
 
   return (
